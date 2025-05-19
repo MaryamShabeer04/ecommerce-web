@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+
+}
+
+
+.logo {
+    position: relative;
+    right: 50px;
+    width: 100px; /* Adjust the size  */
+    height: 100px; 
+    border-radius:150px; /* Rounds the corners */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Floating effect on hover */
+.logo:hover {
+    transform: translateY(-10px); /* Moves the logo up slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+ 
+  
+  
+
+h1 {
+    font-size:50px;
+    line-height:64px;
+    color: #222;
+
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{ /*this is for homepage banner button,had to be different from other buttons,,so made this class and adding normal to other button makes them take this specific styling....also for any buttons with class as normal*/
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fffcfc;
+    background:linear-gradient(45deg,#D8BFAA,#D36E70);
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition:0.2s;
+}
+
+body{
+    width:100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    background: linear-gradient(to bottom,#815f3e, #eecaaa );
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;/*makes the navbar stay in one place even while scrolling up or down*/ 
+    top: 0px;   
+    left:0px;
+    height: 90px; /*added by me
+    
+    /*
+    .brand-name { font-family: 'Allura', cursive;
+        position:relative;
+        font-size: 100px;
+        top: 10px; /* adjust the top position 
+        right: 50px;
+        color: #665033; /* Soft beige shade 
+        
+    */
+}
+
+#navbar {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Base styles for icons my addition    
+#navbar i {
+    font-size: 24px;
+    color: #665033; /* Soft beige shade 
+    padding: 10px;
+    border: 2px solid #967e62; /* Pastel outline 
+    border-radius: 50%;
+    box-shadow: 0 0 10px #d3b897; /* Gentle glow 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar i:hover {
+    transform: translateY(-10px); /* Floating effect 
+    box-shadow: 0 0 20px #644c2e ; /* Stronger glow on hover 
+    color:#3e4446;
+
+} */
+
+
+#navbar li {
+    list-style:none;
+    padding: 0 20px;
+    position:relative;/*position tag was aadded again after some time did not understand*/
+}
+
+
+#navbar li a{
+    text-decoration:none;
+    font-size: 24px;
+    font-weight:600;
+    color:#614f33;
+    transition:0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active /*add active tag to know when which page is in use https://www.youtube.com/watch?v=P8YuWEkTeuE&list=PL9bD98LkBR7P8MYh0RzNSHgeVNTA8g0nB
+24.30 timestamp */
+{
+    color: #fafafa;
+}
+/*did not understand this part,it is an addition */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: ""; /* stuck over here, thought it was supposed to be minus sign instead of double quotes*/
+    width: 30%;
+    height: 2px;
+    background:#665033;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+
+#mobile{
+    display:none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+#hero   /*I adapted your file path to a relative path by assuming that your image is inside your project folder. Instead of using the full absolute path (C:\Users\...), a relative path works within your project structure.This assumes that your image is inside a subfolder (images/home page) within your project directory. This approach keeps your project portable and ensures it works across different systems*/
+{
+    background-image: url("images/home page/h8.jpg");
+    
+    background-repeat: no-repeat;
+    background-size:cover; /* Ensures the image covers the entire section */
+    background-position:top 25% right 0 ; /* Centers the image,can also change position to center*/
+    height: 90vh;
+    width: 100%;
+    padding: 0px 80px; /*i had kept 50 for both*/
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+   /* position: relative;i had added this*/ 
+    
+}
+
+
+
+#hero h1{
+color:#404657;
+}
+
+section p {
+    font-size: 25px;
+    color: #1a1a1a; /* change to your desired color */
+  }
+
+#hero button{
+background-image:url("images/home page/button.jpg");
+background-color:transparent;
+color: #cec6c3;
+border: 0px;
+padding: 14px 65px 14px 65px;
+border-radius: 25px;
+background-repeat: no-repeat;
+cursor: pointer;
+font-weight: 700;
+font-size:15px;
+
+}
+
+/*added by me*/
+#hero button {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #hero button:hover {
+    transform: translateY(-10px); /* adjust the value to control the floating distance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* add a subtle shadow effect */
+  }
+  
+#feature .fe-box{
+    text-align:center;
+    padding: 10px 5px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin:15px 0;
+    width: 190px; /* Adjust width to fit your design,added by me*/
+    height: auto; /* Keeps the proportions flexible,added by me */
+
+}
+
+#feature .fe-box img{
+width: 100%;
+margin-bottom: 10px;
+}
+
+/* added by me 
+.fe-box img {/* added by me 
+    max-width: 200px; /* Restrict image width 
+    max-height: 250px; /* Restrict height
+    width: auto; /* Maintain aspect ratio 
+    height: auto;
+}*/
+
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(94, 60, 52, 0.575);
+
+}
+
+#feature{ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+/*dont think this is imp ,sale bg color*/
+#feature .fe-box h6 {
+  display:inline-block;
+  padding: 9px,8px,6px,8px;
+  line-height:1;
+  border-radius: 4px;
+  color:#aa7763;
+  background-color: #cec6c3;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+width: 23%;
+min-width: 250px;
+padding: 10px 12px;
+border: 1px solid #cce7d0;
+border-radius:25px;
+cursor: pointer;
+box-shadow:20px 20px 30px rgba(0,0,0,0.02);
+margin:15px 0;
+transition: 0.2s ease;
+text-align:start; /*added by me*/
+position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro img{
+width:200px;
+height: 300px; /*added by me*/
+object-fit: cover; /*added by me*/
+border-radius:20px;
+}
+
+#product1 .pro .des{
+    text-align:start;/*this line of code was not working so had to make add in #product1 .pro*/
+    padding: 10px 0;
+}
+
+#product1 .pro span { /*removed .des from here*/
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro h5{ /*removed .des from here*/
+
+    padding-top:7px;
+    color: #1a1a1a;
+    font-size:14px;
+}
+
+#product1 .pro i {/*removed .des from here*/
+    font-size:12px;
+    color:rgb(243,181,25);
+    
+}
+
+#product1 .pro h4 {
+    padding-top:7px;
+    font-size: 20px;
+    font-weight:250;
+    color: #2c5856;
+}
+
+/* this was for cart icon by me
+#product1 .pro-container a 
+{
+    justify-content: center; /* Centers horizontally 
+    align-items: center; /* Centers vertically 
+    display: flex;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:25px;
+    background-color: #f2fcfb;
+    border:1px solid #cce7d0;
+    font-weight: 500;
+    color: #554b4b;
+    bottom: 20px;
+    right:10px;
+} */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/home page/b1.jpg");
+    width:100%;
+    height:48vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner h4{
+    color: #595a37;
+    font-size: 30px;
+}
+
+#banner h2{
+ font-size: 50px;
+ padding: 10px 0;   
+ color: #70705b;
+}
+
+#banner h2 span{
+    color: #df3737; 
+}
+
+#banner button:hover{
+    background: #ffffff;
+    color:#000000;
+}
+
+#sm-banner{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-image: url("images/home page/b2.jpg");
+    min-width:580px;
+    height:58vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("images/home page/b3.jpg");
+    
+}
+
+#sm-banner h4{
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#sm-banner h2{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+#sm-banner span{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+/*added by me*/
+#sm-banner .banner-box2 h4{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/*added by me*/
+#sm-banner .banner-box2 h2{
+    color: #d8cece;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+/*added by me*/
+#sm-banner .banner-box2 span{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+button.white{ /*this is copied from the normal button at the top,just changed the class name and some specs*/
+    font-size: 20px;
+    font-weight: 600;
+    padding: 11px 80px;
+    color: #000000;
+    background-color: transparent;
+    /*background:linear-gradient(45deg,#D8BFAA,#D36E70);*/
+    cursor: pointer;
+    border:1px solid #000000;
+    outline:none;
+    transition:0.2s;
+}
+
+#sm-banner .banner-box:hover button{/*added this button color under banner box class cause it is on the banner*/
+    background: #9c6b5e;
+    border: 1px solid #9c6b5e;
+
+}
+
+#banner3{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-image: url("images/home page/b4.jpg");
+    min-width:30%;
+    height:30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+    background-image: url("images/home page/b5.jpg");
+}
+
+#banner3 .banner-box3{
+    background-image: url("images/home page/b6.jpg");
+}
+
+#banner3 h2{
+     color: #ffffff;
+     font-weight: 900;
+     font-size: 22px;
+}
+
+#banner3 h3{
+    color: #000000;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#newsletter{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/home page/b7.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-size: cover; /*added by me*/
+    background-color: #8b6c58;
+}
+
+#newsletter h4{
+font-size: 22px;
+font-weight: 700;
+color: #ffffff;
+}
+
+#newsletter p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #dddb4f;
+}
+    
+#newsletter p span{
+    color: #444b55;
+}
+   
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding:0 1.25em;
+    font-size: 14px;
+    width:100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{ /*i added the specs from the global button normal instead of copying the class in html */
+    background-color: #554a44;
+    color:#fff;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition:0.2s;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin:0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom:10px;
+}
+
+footer .follow{
+    margin-bottom: 20px;
+}
+
+footer .follow i{
+    color:#2c5856;
+    padding-right: 4px;
+    cursor:pointer;
+}
+
+
+footer .install .row img{
+    border:1px solid #000000;
+    border-radius: 20px;
+    width: 250px;
+    height: auto;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+    width: 250px;
+    height: auto;
+}
+
+footer .follow i:hover,
+footer a:hover{
+     color: #9c593f;
+}
+
+footer .copywright{
+    width: 100%;
+    text-align: center;
+}
+
+/*contact page*/
+
+#contact-details{
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+
+#contact-details .details{
+    width:40%;
+}
+
+#contact-details .details span{ 
+    font-size:18px;
+}
+
+#contact-details .details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style:none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 15px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin:0;
+    font-size: 15px;
+}
+
+#contact-details .map{
+    width:55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width:100%;
+    height: 100%;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin:30px;
+    padding: 80px;
+    border:1px solid #e1e1e1;
+}
+
+#form-details form{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form span{ 
+    font-size:15px;
+}
+
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#form-details form input,
+#form-details form textarea/*i added textarea with input because i needed same styles*/
+{
+    width:100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background: #976752;/*original code was background-color...but couldnt add that as in normal button class there as already a colour in background code and not background-color*/
+    color: #fff;
+}
+
+
+/*cart page*/
+
+#cart{
+    overflow-x: auto;
+}
+
+#cart table{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart i {
+    font-size: 18px;
+    color: #524f4f;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width:100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width:150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width:250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width:150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width:70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border:1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background: #b38775;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal{
+    width:50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal h3{
+    padding-bottom: 15px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+/*start media query*/
+/* creating a hamburger menu and layout f0r medium screen dimensions/go to inspect,select ipad mini or ipad*/
+@media(max-width:799px){
+.section-p1{
+    padding:40px 40px;
+}
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #9e8560;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition:0.3s;
+    }
+
+    #navbar.active{
+        right:0px;
+    }
+    
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+    }
+
+    #mobile i{
+         color: #614f33;
+         font-size: 24px;
+         padding-left:20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color:#30281c;
+        font-size: 24px;
+
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero {
+        height: 78vh;
+        padding: 0px 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    /*added by me*/
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+    /*contact page*/
+    #form-details{
+        padding: 40px;
+    }
+    #form-details form{
+        width: 50%;
+    }
+
+
+    /* i added this part*/
+    footer .logo {
+        margin-bottom: 30px;
+        position: initial;
+    }
+}
+
+
+/* creating a layout f0r smaller screen dimensions/go to inspect,select iphone x*/
+@media (max-width:477px) {
+
+    .section-p1{
+    padding: 20px;
+    }
+    
+    #header {
+        padding: 20px 55px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0px 20px;
+        background-position:55%;
+    }
+
+    #feature{
+        justify-content: space-between;
+    }
+
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro{
+        width: 100%;
+    }
+
+    #banner{
+        height: 35vh;
+    }
+
+    /*added  by me*/
+    #banner h4{
+        color: #000000;
+    }
+
+    #sm-banner .banner-box{
+        height:40vh;
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    
+    #banner3{
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+
+    #newsletter{
+    padding: 40px 20px;
+}
+
+    #newsletter .form {
+        width: 1000%;
+    }
+
+    footer .copywright{
+        text-align: start;
+    }
+
+    /*contact page*/
+    #contact-details{
+        flex-direction: column;
+    }
+
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map{
+        width: 100%;
+    }
+
+    #form-details{
+        margin:10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form{
+        width:100%;
+        margin-bottom: 30px;
+    }
+
+/*cart page*/
+#cart-add{
+    flex-direction: column;
+}
+
+#coupon{
+    width: 100%;
+}
+
+#subtotal{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+/* Single Product*/
+#prodetails{
+    display: flex;
+    flex-direction: column;
+}
+#prodetails .single-pro-image {
+    width: 100% !important; /*had to add important..cause the code was not changing anything at all without it*/
+    margin-right: 0px !important;/*had to add important..cause the code was not changing anything at all without it*/
+}
+#prodetails .single-pro-details{
+    width: 100% !important;/*had to add important..cause the code was not changing anything at all without it*/
+}
+
+}/*for small screen device bracket*/
+
+
+
+
+#page-header{
+    background-image: url("images/shop page/h2.jpg");
+    width:100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,/*to target 2 things for the same specs,use this format*/
+#page-header p{
+    color: #473b30;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #a38b6b;
+    padding: 15px 20px;
+    border-radius:4px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Product*/
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: auto; /*actual was 24%*/
+    cursor: pointer;
+}
+
+/*added by me
+.small-img-col{
+    cursor:pointer;
+    flex-basis: 80px;  Ensures each image starts at 80px width 
+    flex-grow: 0;  Prevents them from expanding unevenly 
+    flex-shrink: 0;  Prevents them from shrinking 
+
+}
+
+added by me
+.small-img-col img {
+    width: 100%; /* Ensures images fill their flex container 
+    height: 80px; /* Makes all images uniform in height 
+    object-fit: cover; /* Maintains a consistent aspect ratio 
+}*/
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size:20px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width:50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;/*removes the outline on the amount box when you hover over it...same for select box,can remove if i want*/
+}
+
+#prodetails .single-pro-details button{
+    background: #836346;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+    color: #58432f;
+}
+
+/*User Page -by me*/
+#user{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    min-height: 100vh;
+    background:url('images/home page/b3.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align:center ;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 15px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align:center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
